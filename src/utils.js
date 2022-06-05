@@ -28,12 +28,6 @@ const isThemeLoaded = $head => $head.find('#cypress-themes').length > 0
 
 const getTheme = () => Cypress._.toLower(Cypress.config('theme') || 'dark')
 
-const hasFailed = () => {
-  const rootSuite = getRootTest(Cypress.state('ctx').currentTest)
-  const failed = hasSuiteFailed(rootSuite)
-  return failed
-}
-
 const getRootTest = test => {
   return test.parent ? getRootTest(test.parent) : test
 }
@@ -109,9 +103,8 @@ const stubMediaQuery = () => () => {
 
 module.exports = {
   getSourceFolder,
-  hasFailed,
-  loadTheme,
   isTheme,
+  loadTheme,
   loadTheme,
   stubMediaQuery
 }
