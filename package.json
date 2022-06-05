@@ -1,0 +1,96 @@
+{
+  "name": "cypress-themes",
+  "description": "Dark mode for Cypress test runner from user space",
+  "version": "0.0.0-development",
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "bugs": "https://github.com/bahmutov/cypress-themes/issues",
+  "config": {
+    "pre-git": {
+      "commit-msg": "simple",
+      "pre-commit": [
+        "npm prune",
+        "npm run deps",
+        "npm test",
+        "git add src/*.js",
+        "npm run ban"
+      ],
+      "pre-push": [
+        "npm run unused-deps",
+        "npm run license",
+        "npm run ban -- --all",
+        "npm run size"
+      ],
+      "post-commit": [],
+      "post-merge": []
+    }
+  },
+  "files": [
+    "src/*.css",
+    "src/*.js",
+    "src/*.mp3",
+    "!src/*-spec.js"
+  ],
+  "homepage": "https://github.com/bahmutov/cypress-themes#readme",
+  "keywords": [
+    "cypress",
+    "cypress-io",
+    "dark",
+    "theme"
+  ],
+  "license": "MIT",
+  "main": "src/dark",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "release": {
+    "analyzeCommits": {
+      "preset": "angular",
+      "releaseRules": [
+        {
+          "type": "break",
+          "release": "major"
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahmutov/cypress-themes.git"
+  },
+  "scripts": {
+    "ban": "ban",
+    "deps": "deps-ok && dependency-check --no-dev .",
+    "issues": "git-issues",
+    "license": "license-checker --production --onlyunknown --csv",
+    "lint": "standard --verbose --fix src/*.js",
+    "prelint": "npm run pretty",
+    "pretest": "npm run lint",
+    "pretty": "prettier-standard 'src/*.js'",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
+    "test": "npm run unit",
+    "unit": "mocha src/*-spec.js",
+    "unused-deps": "dependency-check --detective precinct --unused --no-dev .",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "ban-sensitive-files": "1.9.18",
+    "cypress": "^10.0.2",
+    "dependency-check": "3.4.1",
+    "deps-ok": "1.4.1",
+    "git-issues": "1.3.1",
+    "license-checker": "24.1.0",
+    "mocha": "6.2.3",
+    "pre-git": "3.17.1",
+    "precinct": "5.3.1",
+    "prettier-standard": "9.1.1",
+    "semantic-release": "17.4.7",
+    "standard": "12.0.1"
+  },
+  "dependencies": {
+    "postcss": "7.0.39",
+    "postcss-css-variables": "0.17.0"
+  }
+}
