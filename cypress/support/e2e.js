@@ -24,4 +24,4 @@ import './commands'
 // require('cypress-themes/src/halloween')
 // - or any theme via (theme "dark" by default)
 // you can also set the name of the theme to load in "cypress.json"
-// require('cypress-themes/src/dark')
+// require('cypress-themes/src')

@@ -69,7 +69,7 @@ const loadTheme = theme => {
       console.error('using default theme "%s"', theme)
     }
 
-    const themeFilename = join(getSourceFolder(), `${theme}/${theme}.css`)
+    const themeFilename = join(getSourceFolder(), `dark.css`)
 
     cy.readFile(themeFilename, { log: false })
       .then(convertCssVariables)

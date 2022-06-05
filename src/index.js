@@ -1,4 +1,4 @@
-const { loadTheme, stubMediaQuery } = require('../utils')
+const { loadTheme, stubMediaQuery } = require('./utils')
 
 /* eslint-env mocha, browser */
 before(loadTheme('dark'))
