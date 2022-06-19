@@ -1,9 +1,9 @@
 /* Cypress v3 */
 :root {
-  --background: #222426;
-  --dark-background: #171717;
-  --lighter-background: #3a3a3a;
-  --light-element: #444648;
+  --background: #1b1e2e;
+  --dark-background: #171926;
+  --light-element: #5a5f7a;
+  /*--lighter-background: #3a3a3a;
   --active-button: #292c2e;
   --active-color: #cccccc;
   --button-border: 1px solid #3a3a3a;
@@ -14,13 +14,13 @@
   --pinned-command-background-color: #3b1654;
   --pinned-command-background-color-hover: #531f77;
   --icons-color: #999999;
-  --icons-hover-color: #cccccc;
+  --icons-hover-color: #cccccc; */
   /* passed and failed commands */
-  --failed-command-background-color: inherit;
+  /*--failed-command-background-color: inherit;
   --state-failed-background-color: #ae3a46;
-  --state-failed-color: #f0adad;
+  --state-failed-color: #f0adad; */
 }
-.reporter {
+/* .reporter {
   background-color: var(--background);
 }
 
@@ -30,7 +30,18 @@
 .runner header .url {
   color: #aaaaaa;
   background-color: var(--background);
+} */
+
+#spec-runner-header {
+  background-color: var(--background);
 }
+
+.h-0 {
+  background-color: var(--dark-background);
+  height: 10000px !important;
+}
+
+/* 
 .runner .url:hover,
 .runner .url:focus,
 .runner .url:active {
@@ -195,4 +206,4 @@
   > .runnable-wrapper
   .collapsible-more {
   margin-left: 5px;
-}
+} */
