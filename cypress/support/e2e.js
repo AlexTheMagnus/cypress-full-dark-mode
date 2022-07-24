@@ -16,12 +16,5 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
-
-// usually client project would load
-// - either Halloween theme
-// require('cypress-themes/src/halloween')
-// - or any theme via (theme "dark" by default)
-// you can also set the name of the theme to load in "cypress.json"
-// require('cypress-themes/src')
+// Add next line to add the cypress-full-dark-mode pluggin to your project 
+//require('../../src');
