@@ -9,7 +9,7 @@ const getSourceFolder = () => {
   // the user package has installed it using relative "file:.." link
   const installedAsFile = Cypress._.startsWith(__dirname, '/..')
   const sourceFolder = installedAsFile
-    ? join('node_modules/cypress-themes/src')
+    ? join('node_modules/cypress-full-dark-mode/src')
     : __dirname
   return sourceFolder.replace(/^\//, '')
 }
@@ -20,13 +20,9 @@ const getSourceFolder = () => {
 const convertCssVariables = mycss =>
   postcss([cssVariables()]).process(mycss).css
 
-const knownThemes = ['dark', 'halloween']
-
 const getHead = () => Cypress.$(parent.window.document.head)
 
-const isThemeLoaded = $head => $head.find('#cypress-themes').length > 0
-
-const getTheme = () => Cypress._.toLower(Cypress.config('theme') || 'dark')
+const isThemeLoaded = $head => $head.find('#cypress-full-dark-mode').length > 0
 
 const getRootTest = test => {
   return test.parent ? getRootTest(test.parent) : test
@@ -38,15 +34,13 @@ const hasSuiteFailed = suite => {
   return suite.tests.some(hasTestFailed) || suite.suites.some(hasSuiteFailed)
 }
 
-const isTheme = theme => getTheme() === theme
-
 const shouldStubMediaQuery = () => Boolean(Cypress.config('darkMediaQuery'))
 
 /**
  * returns a function that a `before` callback can call to load desired theme
- * @example before(toLoadTheme('halloween'))
+ * @example before(loadTheme())
  */
-const loadTheme = theme => {
+const loadTheme = () => {
   return () => {
     // do we have style loaded already? if yes, nothing to do
     // const $head = Cypress.$(parent.window.document.head)
@@ -55,27 +49,13 @@ const loadTheme = theme => {
       return
     }
 
-    if (!theme) {
-      theme = getTheme()
-    }
-
-    if (!knownThemes.includes(theme)) {
-      console.error(
-        'Unknown theme name "%s", only known themes are: %s',
-        theme,
-        knownThemes.join(', ')
-      )
-      theme = 'dark'
-      console.error('using default theme "%s"', theme)
-    }
-
-    const themeFilename = join(getSourceFolder(), `dark.css`)
+    const themeFilename = getSourceFolder()
 
     cy.readFile(themeFilename, { log: false })
       .then(convertCssVariables)
       .then(css => {
         $head.append(
-          `<style type="text/css" id="cypress-themes" theme="${theme}">\n${css}</style>`
+          `<style type="text/css" id="cypress-full-dark-mode">\n${css}</style>`
         )
       })
   }
@@ -103,8 +83,6 @@ const stubMediaQuery = () => () => {
 
 module.exports = {
   getSourceFolder,
-  isTheme,
-  loadTheme,
   loadTheme,
   stubMediaQuery
 }

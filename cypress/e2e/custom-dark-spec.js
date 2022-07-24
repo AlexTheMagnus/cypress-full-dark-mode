@@ -1,4 +1,4 @@
-require('../../src')
+// require('../../src')
 
 describe('custom dark theme', () => {
   it('loads page with dark theme', () => {

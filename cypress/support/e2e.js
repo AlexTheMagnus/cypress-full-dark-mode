@@ -17,4 +17,4 @@
 import './commands'
 
 // Add next line to add the cypress-full-dark-mode pluggin to your project 
-//require('../../src');
+require('../../src');
