@@ -9,7 +9,7 @@ const getSourceFolder = () => {
   // the user package has installed it using relative "file:.." link
   const installedAsFile = Cypress._.startsWith(__dirname, '/..')
   const sourceFolder = installedAsFile
-    ? join('node_modules/cypress-full-dark-mode/src')
+    ? 'node_modules/cypress-full-dark-mode/src'
     : __dirname
   return sourceFolder.replace(/^\//, '')
 }
@@ -49,7 +49,7 @@ const loadTheme = () => {
       return
     }
 
-    const themeFilename = getSourceFolder()
+    const themeFilename = join(getSourceFolder(), `dark.css`)
 
     cy.readFile(themeFilename, { log: false })
       .then(convertCssVariables)
