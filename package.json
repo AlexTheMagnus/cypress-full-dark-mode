@@ -1,9 +1,11 @@
 {
-  "name": "cypress-full-dark-mode",
+  "name": "@alexmagnus/cypress-full-dark-mode",
   "description": "Full dark mode for Cypress test runner",
   "version": "0.0.0-development",
   "author": "AlexTheMagnus <https://github.com/AlexTheMagnus>",
-  "bugs": "https://github.com/AlexTheMagnus/cypress-full-dark-mode/issues",
+  "bugs": {
+    "url": "https://github.com/AlexTheMagnus/cypress-full-dark-mode/issues"
+  },
   "config": {
     "pre-git": {
       "commit-msg": "simple",
@@ -77,5 +79,12 @@
   "dependencies": {
     "postcss": "7.0.39",
     "postcss-css-variables": "0.17.0"
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexTheMagnus/cypress-full-dark-mode.git"
   }
 }
