@@ -12,7 +12,6 @@
       "pre-commit": [
         "npm prune",
         "npm run deps",
-        "npm test",
         "git add src/*.js",
         "npm run ban"
       ],
@@ -37,7 +36,8 @@
     "cypress",
     "cypress-io",
     "dark",
-    "theme"
+    "theme",
+    "full-dark"
   ],
   "license": "MIT",
   "main": "src",
@@ -55,8 +55,6 @@
     "pretest": "npm run lint",
     "pretty": "prettier-standard 'src/*.js'",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
-    "test": "npm run unit",
-    "unit": "mocha src/*-spec.js",
     "unused-deps": "dependency-check --detective precinct --unused --no-dev .",
     "cy:open": "cypress open",
     "cy:run": "cypress run",

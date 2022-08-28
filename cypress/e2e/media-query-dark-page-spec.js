@@ -1,4 +1,4 @@
-// require('../../src')
+/// <reference types="cypress" />
 
 describe('custom dark theme', () => {
   it('loads page with dark theme', () => {

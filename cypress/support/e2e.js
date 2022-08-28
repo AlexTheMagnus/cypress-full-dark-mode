@@ -16,5 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-// Add next line to add the cypress-full-dark-mode pluggin to your project 
+// To install cypress-full-dark-mode in your project add the 
+// line `require('@alexmagnus/cypress-full-dark-mode')` 
+// instead of the following:
 require('../../src');
