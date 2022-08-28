@@ -48,12 +48,15 @@ main, .bg-white {
   color: var(--light-element) !important;
 }
 
-
 .icon-dark-gray-600 > *[fill].icon-dark {
   fill: var(--light-element) !important;
 }
 
 .icon-dark-white > *[fill].icon-dark {
+  fill: var(--dark-background) !important;
+}
+
+.icon-light-gray-50 > *[fill].icon-light {
   fill: var(--dark-background) !important;
 }
 
