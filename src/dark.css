@@ -77,6 +77,10 @@ main, .bg-white {
   color: var(--ligther-element);
 }
 
+[id="spec-filter"] {
+  background-color: var(--background);
+}
+
 /* Iframe background */
 .h-0 {
   background-color: var(--dark-background);
