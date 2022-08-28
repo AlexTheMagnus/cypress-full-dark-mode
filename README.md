@@ -1,5 +1,8 @@
 # cypress-full-dark-mode [![cypress version][cypress-version]][cypress-url]
 
+A full dark mode for Cypress 10 or higher.
+
+
 [![NPM][npm-icon]][npm-url]
 
 [![semantic-release][semantic-image]][semantic-url]
@@ -11,7 +14,7 @@
 ## Install
 
 > Requires:
-> - [Node](https://nodejs.org/en/) version 6 or above
+> - [Node](https://nodejs.org/en/) version 6 or above.
 > - [Cypress][cypress-url] version 10 or above.
 
 Add the package to your project dev dependencies:
