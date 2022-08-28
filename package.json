@@ -1,7 +1,7 @@
 {
   "name": "@alexmagnus/cypress-full-dark-mode",
   "description": "Full dark mode for Cypress test runner",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "author": "AlexTheMagnus <https://github.com/AlexTheMagnus>",
   "bugs": {
     "url": "https://github.com/AlexTheMagnus/cypress-full-dark-mode/issues"
