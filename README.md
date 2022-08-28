@@ -1,4 +1,4 @@
-# cypress-full-dark-mode [![cypress version][cypress-version]][cypress-url]
+# cypress-full-dark-mode [![Run example specs][test-workflow-badge]][test-workflow-url] [![cypress version][cypress-version]][cypress-url]
 
 A full dark mode for Cypress 10 or higher.
 
@@ -65,6 +65,8 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+[test-workflow-badge]: https://github.com/AlexTheMagnus/cypress-full-dark-mode/actions/workflows/main.yml/badge.svg
+[test-workflow-url]: https://github.com/AlexTheMagnus/cypress-full-dark-mode/actions/workflows/main.yml
 [npm-icon]: https://nodei.co/npm/@alexmagnus/cypress-full-dark-mode.svg?downloads=true
 [npm-url]: https://www.npmjs.com/package/@alexmagnus/cypress-full-dark-mode
 [cypress-version]: https://img.shields.io/badge/cypress-10.0.2-brightgreen
