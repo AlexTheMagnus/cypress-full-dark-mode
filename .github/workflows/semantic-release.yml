@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         
-- name: Semantic Release
+      - name: Semantic Release
         uses: codfish/semantic-release-action@v2
         with:
           # specify default branches to add support for the `main` branch
