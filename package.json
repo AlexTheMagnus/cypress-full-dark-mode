@@ -47,6 +47,9 @@
   },
   "scripts": {
     "ban": "ban",
+    "commit": "simple-commit-message",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "deps": "deps-ok && dependency-check --no-dev .",
     "issues": "git-issues",
     "license": "license-checker --production --onlyunknown --csv",
@@ -54,11 +57,9 @@
     "prelint": "npm run pretty",
     "pretest": "npm run lint",
     "pretty": "prettier-standard 'src/*.js'",
+    "semantic-release": "semantic-release",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
-    "unused-deps": "dependency-check --detective precinct --unused --no-dev .",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "semantic-release": "semantic-release"
+    "unused-deps": "dependency-check --detective precinct --unused --no-dev ."
   },
   "devDependencies": {
     "ban-sensitive-files": "1.9.18",
