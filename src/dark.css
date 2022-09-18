@@ -24,11 +24,7 @@ main, .bg-white {
   fill: var(--light-element) !important;
 }
 
-.icon-dark-white > *[fill].icon-dark {
-  fill: var(--dark-background) !important;
-}
-
-.icon-light-gray-50 > *[fill].icon-light {
+.icon-dark-white > *[fill].icon-dark, *[fill].icon-dark-gray-500, .icon-light-gray-50 > *[fill].icon-light {
   fill: var(--dark-background) !important;
 }
 
