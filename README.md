@@ -69,7 +69,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 [test-workflow-url]: https://github.com/AlexTheMagnus/cypress-full-dark-mode/actions/workflows/main.yml
 [npm-icon]: https://nodei.co/npm/@alexmagnus/cypress-full-dark-mode.svg?downloads=true
 [npm-url]: https://www.npmjs.com/package/@alexmagnus/cypress-full-dark-mode
-[cypress-version]: https://img.shields.io/badge/cypress-10.0.2-brightgreen
+[cypress-version]: https://img.shields.io/badge/cypress-^10.0.2-brightgreen
 [cypress-url]: https://www.cypress.io/
 [semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
 [semantic-url]: https://github.com/semantic-release/semantic-release
