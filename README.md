@@ -65,8 +65,8 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
-[test-workflow-badge]: https://github.com/AlexTheMagnus/cypress-full-dark-mode/actions/workflows/main.yml/badge.svg
-[test-workflow-url]: https://github.com/AlexTheMagnus/cypress-full-dark-mode/actions/workflows/main.yml
+[test-workflow-badge]: https://github.com/AlexTheMagnus/cypress-full-dark-mode/actions/workflows/semantic-release.yml/badge.svg
+[test-workflow-url]: https://github.com/AlexTheMagnus/cypress-full-dark-mode/actions/workflows/semantic-release.yml
 [npm-icon]: https://nodei.co/npm/@alexmagnus/cypress-full-dark-mode.svg?downloads=true
 [npm-url]: https://www.npmjs.com/package/@alexmagnus/cypress-full-dark-mode
 [cypress-version]: https://img.shields.io/badge/cypress-^10.0.2-brightgreen
