@@ -32,7 +32,7 @@ main, .bg-white {
   stroke: var(--light-element) !important;
 }
 
-.border-gray-50, .border-gray-100, .border-b-gray-100 {
+.border, .border-gray-50, .border-gray-100, .border-b-gray-100, .border-t-gray-100 {
   border-color: var(--boder-color) !important;
 }
 
@@ -43,6 +43,10 @@ main, .bg-white {
 
 [data-cy="header-bar-content"] {
   color: var(--ligther-element);
+}
+
+[data-cy="spec-list-file"] {
+  border-color: var(--boder-color) !important;
 }
 
 [id="spec-filter"] {
