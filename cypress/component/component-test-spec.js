@@ -1,7 +1,7 @@
-import App from '../../example-app/src/App'
+import Title from '../../example-app/src/Title'
 
 describe('Component testing example', () => {
   it('mounts', () => {
-    cy.mount(<App />)
+    cy.mount(<Title />)
   })
 })
