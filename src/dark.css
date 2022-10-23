@@ -6,6 +6,7 @@
   --boder-color: #2e3247;
   --selected-item-background: #2e3247;
   --highlight: #9aa2fc;
+  --enabled-experiment: #10c45e;
 }
 
 main, .bg-white {
@@ -94,11 +95,11 @@ main, .bg-white {
 }
 
 .text-jade-500 {
-  color: rgb(16, 196, 94) !important;
+  color: var(--enabled-experiment) !important;
 }
 
 .icon-light-jade-500 > *[fill][stroke].icon-light-fill,
 .icon-dark-jade-500 > *[fill][stroke].icon-dark-stroke {
-  fill: rgb(16, 196, 94) !important;
-  stroke: rgb(16, 196, 94) !important;
+  fill: var(--enabled-experiment) !important;
+  stroke: var(--enabled-experiment) !important;
 }
