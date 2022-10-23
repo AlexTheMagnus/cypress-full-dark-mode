@@ -71,3 +71,8 @@ main, .bg-white {
 .text-indigo-500 {
   color: var(--highlight) !important;
 }
+
+/* Settings expanded container*/
+.bg-light-50 {
+  background-color: var(--background) !important;
+}
