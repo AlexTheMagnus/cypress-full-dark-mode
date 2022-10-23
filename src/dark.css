@@ -71,3 +71,17 @@ main, .bg-white {
 .text-indigo-500 {
   color: var(--highlight) !important;
 }
+
+/* Settings expanded container*/
+[data-cy="config-code"], [data-cy="config-legend"] {
+  background-color: var(--dark-background);
+  border-color: var(--boder-color);
+}
+
+.bg-light-50 {
+  background-color: var(--background) !important;
+}
+
+.divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--boder-color) !important;
+}
