@@ -20,8 +20,11 @@ main, .bg-white {
   color: var(--light-element) !important;
 }
 
-.icon-dark-gray-600 > *[fill].icon-dark {
+.icon-dark-gray-600 > *[fill].icon-dark,
+.icon-light-gray-50 > *[fill][stroke].icon-light-fill,
+.icon-dark-gray-200 > *[fill][stroke].icon-dark-stroke {
   fill: var(--light-element) !important;
+  stroke: var(--light-element) !important;
 }
 
 .icon-dark-white > *[fill].icon-dark, *[fill].icon-dark-gray-500, .icon-light-gray-50 > *[fill].icon-light {
@@ -84,4 +87,18 @@ main, .bg-white {
 
 .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
   border-color: var(--boder-color) !important;
+}
+
+.icon-light-fill {
+  fill: var(--light-element) !important;
+}
+
+.text-jade-500 {
+  color: rgb(16, 196, 94) !important;
+}
+
+.icon-light-jade-500 > *[fill][stroke].icon-light-fill,
+.icon-dark-jade-500 > *[fill][stroke].icon-dark-stroke {
+  fill: rgb(16, 196, 94) !important;
+  stroke: rgb(16, 196, 94) !important;
 }
