@@ -3,8 +3,8 @@ name: Run semantic release
 on: 
   push:
   pull_request:
-  branch:
-    - master
+    branch:
+      - master
 
 jobs:
   run-script:
