@@ -1,9 +1,11 @@
 name: Run semantic release
 
+
 on: [push, pull_request]
 
 jobs:
   run-script:
+    if: ${{github.ref == 'refs/heads/master'}}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
