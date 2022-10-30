@@ -1,12 +1,8 @@
 name: Run semantic release
 
-on: 
-  push:
-    branch:
-      - master
-  pull_request:
-    branch:
-      - master
+if: ${{github.ref == 'refs/heads/master'}}
+
+on: [push, pull_request]
 
 jobs:
   run-script:
